@@ -1,0 +1,8 @@
+<h1>Stupid Coaching</h1>
+
+<p>Ask your coach anything:</p>
+
+<%= form_tag "/answer", method: :get, class: "input-group" do %>
+  <%= text_field_tag :question, nil, class: "form-control" %>
+  <%= submit_tag "Ask", class: "btn btn-primary" %>
+<% end %>
